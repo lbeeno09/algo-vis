@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Algorithm Visualizer
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-    </div>
+      <aside className="sidebar">
+        List of available algorithms goes here
+        <div className="sorting">
+          <p>Sorting</p>
+          <ul>
+            <li>Bubble Sort</li>
+            <li>Insertion Sort</li>
+            <li>Quick Sort</li>
+          </ul>
+        </div>
+        <div className="searching">
+          <p>Searching</p>
+          <ul>
+            <li>Linear Search</li>
+            <li>Binary Search</li>
+          </ul>
+        </div>
+      </aside>
+      <main className="display">
+        This is the main display for the algorithm
+      </main>
+      <footer>
+      </footer>
+    </>
   );
 }
 
